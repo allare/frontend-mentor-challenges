@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6ee0ba9e41.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Social Media Dashboard With Theme Switcher</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="container">
+        <div class="title-section">
+          <h1 class="title">Social Media Dashboard</h1>
+          <p class="followers-count">Total Followers: 23,004</p>
+        </div>
+        <div class="theme-toggle-btn">
+          <span class="dark-mode">Dark Mode</span><input type="checkbox" name="checkbox" id="checkbox">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="dashboard-area">
+        <section class="social-media-info">
+          <div class="card facebook-card">
+            <div class="top-row">
+              <img src="images/icon-facebook.svg" alt="facebook icon"><span>@nathanf</span>
+            </div>
+            <div class="mid-row">
+              <h1>1987</h1>
+              <p>Followers</p>
+            </div>
+            <div class="bottom-row">
+              <img src="images/icon-up.svg" alt="icon up"><span class="green">12 Today</span>
+            </div>
+          </div>
+          <div class="card twitter-card">
+            <div class="top-row">
+              <img src="images/icon-twitter.svg" alt="twitter icon"><span>@nathanf</span>
+            </div>
+            <div class="mid-row">
+              <h1>1044</h1>
+              <p>Followers</p>
+            </div>
+            <div class="bottom-row">
+              <img src="images/icon-up.svg" alt="icon up"><span class="green">99 Today</span>
+            </div>
+          </div>
+          <div class="card instagram-card">
+            <div class="top-row">
+            <img src="images/icon-instagram.svg" alt="instagram icon"><span>@realnathanf</span>
+          </div>
+          <div class="mid-row">
+            <h1>11k</h1>
+            <p>Followers</p>
+          </div>
+          <div class="bottom-row">
+            <img src="images/icon-up.svg" alt="icon up"><span class="green">1099 Today</span>
+          </div></div>
+          <div class="card youtube-card">
+            <div class="top-row">
+              <img src="images/icon-youtube.svg" alt="youtube icon"><span>Nathan F.</span>
+            </div>
+            <div class="mid-row">
+              <h1>8239</h1>
+              <p>Subscribers</p>
+            </div>
+            <div class="bottom-row">
+              <img src="images/icon-down.svg" alt="icon down"><span class="red">144 Today</span>
+            </div>
+          </div>
+        </section>
+        <section class="overview">
+          <h1 class="title">Overview - Today</h1>
+          <div class="social-media-overview">
+            <div class="social-media-overview-top">
+                <div class="card facebook-page-views">
+                  <div class="card-overview-left">
+                    <p>Page Views</p>
+                    <span>87</span>
+                  </div>
+                  <div class="card-overview-right">
+                    <img src="images/icon-facebook.svg" alt="facebook icon">
+                    <div class="rate green"><img src="images/icon-up.svg" alt="icon up">3%</div>
+                  </div>
+                </div>
+                <div class="card facebook-likes">
+                  <div class="card-overview-left">
+                    <p>Likes</p>
+                    <span>52</span>
+                  </div>
+                  <div class="card-overview-right">
+                    <img src="images/icon-facebook.svg" alt="facebook icon">
+                    <div class="rate red"><img src="images/icon-down.svg" alt="icon down">2%</div>
+                  </div>
+                </div>
+                <div class="card instagram-likes">
+                  <div class="card-overview-left">
+                    <p>Likes</p>
+                    <span>5462</span>
+                  </div>
+                  <div class="card-overview-right">
+                    <img src="images/icon-instagram.svg" alt="instagram icon">
+                    <div class="rate green"><img src="images/icon-up.svg" alt="icon up">2257%</div>
+                  </div>
+                </div>
+                <div class="card instagram-profile-views">
+                  <div class="card-overview-left">
+                    <p>Profile Views</p>
+                    <span>52k</span>
+                  </div>
+                  <div class="card-overview-right">
+                    <img src="images/icon-instagram.svg" alt="instagram icon">
+                    <div class="rate green"><img src="images/icon-up.svg" alt="icon up">1375%</div>
+                  </div>
+                </div>
+            </div>
+            <div class="social-media-overview-bottom">
+                  <div class="card twitter-retweets">
+                    <div class="card-overview-left">
+                      <p>Retweets</p>
+                      <span>117</span>
+                    </div>
+                    <div class="card-overview-right">
+                      <img src="images/icon-twitter.svg" alt="twitter icon">
+                      <div class="rate green"><img src="images/icon-up.svg" alt="icon up">303%</div>
+                    </div>
+                  </div>
+                  <div class="card twitter-likes">
+                    <div class="card-overview-left">
+                      <p>Likes</p>
+                      <span>507</span>
+                    </div>
+                    <div class="card-overview-right">
+                      <img src="images/icon-twitter.svg" alt="twitter icon">
+                      <div class="rate green"><img src="images/icon-up.svg" alt="icon up">553%</div>
+                    </div>
+                  </div>
+                  <div class="card youtube-likes">
+                    <div class="card-overview-left">
+                      <p>Likes</p>
+                      <span>107</span>
+                    </div>
+                    <div class="card-overview-right">
+                      <img src="images/icon-youtube.svg" alt="youtube icon">
+                      <div class="rate red"><img src="images/icon-down.svg" alt="icon down">19%</div>
+                    </div>
+                  </div>
+                  <div class="card youtube-total-views">
+                    <div class="card-overview-left">
+                      <p>Total Views</p>
+                      <span>1407</span>
+                    </div>
+                    <div class="card-overview-right">
+                      <img src="images/icon-youtube.svg" alt="youtube icon">
+                      <div class="rate red"><img src="images/icon-down.svg" alt="icon down">12%</div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sujan Uday</a>.
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
