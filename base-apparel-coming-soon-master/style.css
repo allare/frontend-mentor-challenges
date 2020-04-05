@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root{
+    --desaurated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    --gradient-one: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    --gradient-two: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+}
+
+.wrapper{
+    display: flex;
+    height: 100%;
+    background-image: var(--gradient-one);
+}
+
+.wrapper .hero-form-area {
+    flex: 3;
+    padding: 50px 0;
+}
+
+.wrapper .hero-image-area{
+    flex: 2;
+    background: url("images/hero-desktop.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.container {
+    width: 55%;
+    margin: 0 18%;
+}
+
+
+/* Hero Form Area */
+.hero-form-area .logo img{
+    margin-bottom: 100px;
+}
+
+.mobile-hero-image{
+    width: 100%;
+    height: 250px;
+    background: url("images/hero-mobile.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+    display: none;
+}
+.hero-form-area h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 1.1rem;
+    line-height: 4.2rem;
+}
+
+.hero-form-area h1.top{
+    font-weight: 300;
+    color: var(--desaurated-red);
+}
+
+.hero-form-area h1.bottom{
+    color: var(--dark-grayish-red);
+}
+
+.hero-form-area p {
+    margin: 30px 0;
+    color: var(--desaurated-red);
+    line-height: 1.5rem;
+}
+
+ #email{
+    width: 100%;
+    border-radius: 50px;
+    padding: 24px;
+    border: 1px solid var(--desaurated-red);
+    opacity: .3;
+    outline: none;
+    
+}
+
+::placeholder{
+    color: var(--desaurated-red);
+    font-size: 16px;
+}
+
+form{
+    position: relative;
+}
+
+form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    padding: 21px;
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+    background-image: var(--gradient-two);
+    cursor: pointer;
+}   
+
+form button:hover{
+    box-shadow: 0 0 5px 5px var(--desaurated-red);
+}
+
+form #icon-error{
+    position: absolute;
+    top: 20px;
+    right: 140px;
+    display: none;
+}
+
+form #text-error{
+    margin: 15px;
+    display: none;
+}
+
+form #text-success{
+    margin: 15px;
+    display: none;
+    color: green;
+}
+
+form.error #email{
+    border: 2px solid var(--soft-red);
+}
+
+form.success #email{
+    border: 2px solid green;
+}
+
+form.success #text-success{
+    display: block;
+}
+
+form.error #icon-error{
+    display: block;
+}
+
+form.error #text-error{
+    display: block;
+}
+
+footer{
+    text-align: center;
+    margin: 50px;
+}
+
+/* Mobile device */
+
+@media only screen and (max-width: 540px){
+   .hero-image-area{
+       display: none;
+   }
+
+   .container{
+        width: 100vw;
+        margin: 0;
+   }
+
+   .mobile-hero-image{
+       display: block;
+   }
+
+
+   .hero-form-area .logo img{
+       width: 7rem;
+       margin: 30px;
+   }
+
+
+   .mobile-hero-image{
+       margin-bottom: 70px;
+   }
+
+   .text-area{
+       width: 80%;
+       margin: 0 auto;
+       text-align: center;
+   }
+
+   .text-area h1{
+       font-size: 2.5rem;
+       letter-spacing: 0.6rem;
+       line-height: 2.8rem;
+   }
+
+   .text-area p{
+       font-size: 0.85rem;
+   }
+
+   #email{
+       padding: 0.8rem;
+   }
+
+   form ::placeholder{
+       font-size: 0.8rem;
+   }
+
+   form button{
+        width: 70px;
+        padding: 0.6rem;
+   }
+
+   form #icon-error{
+       right: 80px;
+       top: 10px;
+   }
+}
