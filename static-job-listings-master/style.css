@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+:root{
+    --desaturated-dark-cyan: hsl(180, 29%, 50%);
+    --background-color: hsl(180, 52%, 96%);
+    --tablets-color:  hsl(180, 31%, 95%);
+    --dark-grayish-cyan: hsl(180, 8%, 52%);
+    --very-dark-grayish-cyan: hsl(180, 14%, 20%)
+;
+}
+
+p{
+    font-size: 15px;
+}
+
+.wrapper{
+    width: 100%;
+    padding-bottom: 100px;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+header{
+    background: var(--desaturated-dark-cyan) url(images/bg-header-desktop.svg) no-repeat;
+    width: 100%;
+    height: 170px;
+}
+
+.job-listing-section{
+    padding-top: 80px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list{
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-left: 5px solid var(--desaturated-dark-cyan);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 10px 2px rgba(0, 0, 0, .1);
+}
+
+.job-description{
+    width: 50%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.job-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.top-section{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.company-name{
+    color: var(--desaturated-dark-cyan);
+    font-size: 15px;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+
+}
+
+.filter-new, .filter-featured{
+    padding: 6px 8px;
+    color: #fff;
+    border: 0;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.filter-new{
+    background-color: var(--desaturated-dark-cyan);
+}
+
+.filter-featured{
+    background-color:var(--very-dark-grayish-cyan);
+}
+
+.title{
+    color: var(--very-dark-grayish-cyan);
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.more-info{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-grayish-cyan);
+    position: relative;
+}
+
+.more-info span{
+    font-size: 28px;
+    position: relative;
+    top: -6px;
+}
+
+.filter-tablets{
+    width: 40%;
+}
+
+.tablets{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.tablet{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: var(--desaturated-dark-cyan);
+    list-style: none;
+    padding: 8px;
+    background-color: var(--tablets-color);
+    cursor: pointer;
+}
+
+.attribution{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.attribution a{
+    color: red;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Filter Div */
+
+.filter-desktop{
+    position: absolute;
+    top: 140px;
+    left: 138px;
+    display:none;
+}
+
+.filter-div{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px 2px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-list{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.filter-item{
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: var(--desaturated-dark-cyan);
+    list-style: none;
+    background-color: var(--tablets-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.filter-item p{
+    width: 65%;
+    margin-right: 8px;
+    padding: 8px;
+}
+
+.filter-item .close-btn{
+    width: 35%;
+    padding: 8px;
+    background-color: var(--desaturated-dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn img{
+    padding-top: 3px;
+}
+
+.clear{
+    color: var(--desaturated-dark-cyan);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
