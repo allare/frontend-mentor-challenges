@@ -179,8 +179,8 @@ header{
     align-items: center;
 }
 
-.filter-list{
-    display: inline-flex;
+.filter-lists{
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
